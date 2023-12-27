@@ -1,0 +1,26 @@
+.language-list-box {
+    position: relative;
+    display: inline-block;
+}
+
+.language-options {
+    position: absolute;
+    margin-top: 0;
+}
+
+.language-list-box button {
+    border: none;
+    background-color: transparent;
+    font-family: 'Geneva', sans-serif;
+    color: #252424;
+    font-weight: lighter;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.language-list-box button:hover {
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+}

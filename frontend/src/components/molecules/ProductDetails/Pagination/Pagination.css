@@ -1,0 +1,30 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination button {
+    background-color: transparent;
+    color: #252424;
+    border: none;
+    padding: 5px 10px;
+    font-family: 'Geneva', sans-serif;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    min-width: 60px;
+}
+
+.pagination button:hover {
+    color: #252424;
+}
+
+.pagination span {
+    font-size: 16px;
+    font-family: 'Geneva', sans-serif;
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+}

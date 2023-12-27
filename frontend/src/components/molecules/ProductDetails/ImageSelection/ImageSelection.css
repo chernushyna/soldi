@@ -1,0 +1,23 @@
+.image-selection-container {
+    display: flex;
+}
+
+.small-images {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.small-images img {
+    width: 100px;
+    margin-bottom: 15px;
+    margin-top: 5px
+}
+
+.main-image {
+    flex: 1;
+}
+
+.main-image img {
+    height: 750px;
+}

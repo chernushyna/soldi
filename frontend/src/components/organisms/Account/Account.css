@@ -1,0 +1,38 @@
+.account-container {
+    display: flex;
+    align-items: stretch;
+    margin-top: 100px;
+}
+
+.account-form-container {
+    flex: 1;
+    padding: 16px;
+    margin-left: 60px;
+    border-right: 1px solid #a69b9e;
+}
+
+.account-cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 16px;
+    margin-right: 500px;
+    margin-left: 50px;
+}
+
+.account-cart-container.no-orders {
+    text-align: center;
+}
+
+.account-no-order-info span {
+    font-weight: lighter;
+    font-family: Geneva, sans-serif;
+}
+
+.account-cart-container.no-orders {
+    margin-right: 800px;
+}
+
+

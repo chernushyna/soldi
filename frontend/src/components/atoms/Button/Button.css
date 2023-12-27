@@ -1,0 +1,41 @@
+.baseButton {
+    font-family: Geneva, sans-serif;
+    background-color: #252424;
+    margin-top: 15px;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.baseButton:hover {
+    background-color: #ffffff;
+    color: #252424;
+    border: 1px solid #3e3d3d;
+    transition: background-color 0.3s ease;
+}
+
+.baseButton.inverted {
+    font-family: Geneva, sans-serif;
+    color: #252424;
+    background-color: #ffffff;
+    margin-top: 15px;
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.baseButton.inverted:hover {
+    background-color: #252424;
+    color: #ffffff;
+    border: 1px solid #3e3d3d;
+    transition: background-color 0.3s ease;
+}

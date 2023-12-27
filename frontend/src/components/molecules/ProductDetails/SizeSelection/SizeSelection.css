@@ -1,0 +1,38 @@
+.size-options-container {
+    display: flex;
+
+}
+
+.size-select-option {
+    background-color: transparent;
+    transition: border-radius 0.3s ease;
+    text-align: center;
+    font-family: 'Geneva', sans-serif;
+    font-size: 16px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.size-select-option.active {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.size-select-option:hover {
+    cursor: pointer;
+}
+
+.size-select-option:not(.active):hover {
+    border-radius: 10px;
+}
+
+.size-select-text {
+    font-family: 'Geneva', sans-serif;
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}

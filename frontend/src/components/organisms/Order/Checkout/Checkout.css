@@ -1,0 +1,22 @@
+.checkout-container {
+    display: flex;
+    align-items: stretch;
+}
+
+.checkout-form-container {
+    flex: 1;
+    padding: 16px;
+    margin-left: 350px;
+    /*border: red 2px solid;*/
+}
+
+.checkout-cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*border: red 2px solid;*/
+    flex: 1;
+    padding: 16px;
+    margin-right: 350px;
+}

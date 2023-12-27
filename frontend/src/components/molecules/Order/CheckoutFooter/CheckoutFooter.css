@@ -1,0 +1,19 @@
+.checkout-footer-container {
+    margin-top: 20px;
+    /*border: 2px solid red;*/
+}
+
+.checkout-footer-price {
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 25px;
+}
+
+.checkout-footer-subtotal {
+    margin-bottom: 25px;
+    font-family: 'Geneva', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+

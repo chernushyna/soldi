@@ -1,0 +1,17 @@
+.about-us-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-form {
+    text-align: justify-all;
+    width: 400px;
+}
+
+.about-us-text {
+    font-family: Geneva, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}

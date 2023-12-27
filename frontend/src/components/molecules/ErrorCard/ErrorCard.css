@@ -1,0 +1,17 @@
+.error-label {
+    font-family: Geneva, sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.error-button {
+    padding-top: 10px;
+}
+

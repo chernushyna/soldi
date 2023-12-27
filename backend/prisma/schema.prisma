@@ -1,0 +1,119 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+enum ProductSize {
+  XS
+  S
+  M
+  L
+  XL
+}
+
+enum OrderStatus {
+  SUBMITTED
+  PROCCESSING
+  COMPLETED
+  CANCELLED
+}
+
+model Users {
+  id        String      @id @default(uuid())
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+  username  String      @unique
+  email     String      @unique
+  password  String
+  role      UserRole    @default(USER)
+  firstName String?
+  lastName  String?
+  cartItems CartItems[]
+  orders    Orders[]
+}
+
+model CartItems {
+  id        String       @id @default(uuid())
+  product   Products     @relation(fields: [productId], references: [id])
+  user      Users        @relation(fields: [userId], references: [id])
+  size      ProductSizes @relation(fields: [sizeId], references: [id])
+  quantity  Int
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  productId String
+  userId    String
+  sizeId    String
+
+  @@index([productId], name: "productId")
+  @@index([userId], name: "userId")
+  @@index([sizeId], name: "sizeId")
+}
+
+model Products {
+  id            String         @id @default(uuid())
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  name          String
+  description   String
+  price         Decimal
+  stockQuantity Int
+  category      String
+  cartItems     CartItems[]
+  OrderItem     OrderItems[]
+  ProductImage  ProductImage[]
+  ProductSizes  ProductSizes[]
+}
+
+model Orders {
+  id        String       @id @default(uuid())
+  userId    String
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  firstName String
+  lastName  String
+  address   String
+  phone     String
+  email     String
+  total     Decimal
+  status    OrderStatus  @default(SUBMITTED)
+  items     OrderItems[]
+  user      Users        @relation(fields: [userId], references: [id])
+}
+
+model OrderItems {
+  id        String       @id @default(uuid())
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  order     Orders       @relation(fields: [orderId], references: [id])
+  product   Products     @relation(fields: [productId], references: [id])
+  size      ProductSizes @relation(fields: [sizeId], references: [id])
+  quantity  Int
+  orderId   String
+  productId String
+  sizeId    String
+}
+
+model ProductImage {
+  id        String   @id @default(uuid())
+  data      Bytes
+  product   Products @relation(fields: [productId], references: [id])
+  productId String
+}
+
+model ProductSizes {
+  id         String       @id @default(uuid())
+  size       ProductSize
+  product    Products     @relation(fields: [productId], references: [id])
+  productId  String
+  CartItems  CartItems[]
+  OrderItems OrderItems[]
+}

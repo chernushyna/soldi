@@ -1,0 +1,17 @@
+.name-details-text {
+    font-family: 'Geneva', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price-details-text {
+    font-family: 'Geneva', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+

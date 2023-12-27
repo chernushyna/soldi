@@ -1,0 +1,15 @@
+.link-button {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Geneva', sans-serif;
+    color: black;
+    font-weight: lighter;
+}
+
+.link-button:hover {
+    font-weight: bold;
+}
+
+.header-link-button {
+    padding-left: 5px;
+}

@@ -1,0 +1,19 @@
+.nav-main {
+    padding: 10px;
+}
+
+.nav-main a {
+    text-decoration: none;
+    color: #252424;
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+.nav-main a:last-child {
+    margin-right: 0;
+}
+
+.nav-main a:hover {
+    text-decoration: underline;
+}

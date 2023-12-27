@@ -1,0 +1,32 @@
+.nav-menu-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.nav-menu-main a {
+    text-decoration: none;
+    color: #252424;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
+.header-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.header-link-button {
+    padding-left: 5px;
+}
+
+.header-link-button:hover {
+    text-decoration: underline;
+}
+
+.nav-account-icon {
+    display: flex;
+    align-items: center;
+}

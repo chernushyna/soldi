@@ -1,0 +1,21 @@
+.account-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Geneva, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    align-items: center;
+    color: #777;
+    max-height: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+.account-sidebar-span {
+    margin-bottom: 10px;
+}
+
+.account-sidebar-button {
+    align-self: flex-end;
+}

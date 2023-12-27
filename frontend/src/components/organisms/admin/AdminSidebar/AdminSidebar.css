@@ -1,0 +1,43 @@
+.admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #252424;
+    border-right: 1px solid #ddd;
+    font-family: 'Your Desired Font', sans-serif;
+}
+
+.admin-sidebar label {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.admin-sidebar button {
+    margin-bottom: 8px;
+    padding: 12px;
+    text-align: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 16px;
+}
+
+.admin-sidebar button:hover {
+    background-color: #ddd;
+}
+
+.logout-button {
+    margin-top: auto;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
